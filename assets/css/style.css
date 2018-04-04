@@ -86,6 +86,11 @@ i.description-logo {
 ul.about > li {
     font-size: 1.3em;
     line-height: 1.8;
+    list-style: none;
+}
+
+.about-desc {
+    font-size: 1.3em;
 }
 
 #contact {
@@ -118,4 +123,37 @@ p.contact {
 
 .carousel-indicators .active {
     background-color: rgb(0, 0, 0);
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+
+    width: 0;
+    height: 0;
+
+    text-align: center;
+
+    background: #CFCFCF;
+    color: #000;
+    cursor: pointer;
+    border-radius: 50%;
+
+    transition: opacity 3.0s ease-out;
+    opacity: 0;
+}
+
+#back-to-top:hover {
+    background: #e9ebec;
+}
+
+#back-to-top.show {
+    font-size: 20px;
+    line-height: 45px;
+    width: 48px;
+    height: 48px;
+    opacity: 1;
 }
