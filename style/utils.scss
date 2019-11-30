@@ -1,0 +1,41 @@
+.overflow-hiden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+section > hr {
+  border: 2px solid #555555;
+  width: 25%;
+  margin: 30px auto;
+}
+
+section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  > h1 {
+      text-align: center;
+      text-transform: uppercase;
+  }
+}
+
+section:last-child {
+  padding-bottom: 0;
+}
+
+@media (min-width: 576px) {
+  section > hr {
+    width: 12.5%;
+  }
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+.disable {
+  cursor: not-allowed;
+}

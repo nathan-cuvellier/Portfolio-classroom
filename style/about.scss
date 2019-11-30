@@ -1,0 +1,57 @@
+.about {
+  padding: 3em 0;
+  background-color: #528ee7;
+  color: #ffffff;
+
+  > hr {
+    border-color: #FFFFFF;
+  }
+
+  p.description {
+    padding: 0 2em;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    white-space: nowrap;
+    transition: all .3s ease-in;
+  }
+
+  a:hover {
+      background-color: #FFFFFF;
+      color: #000000;
+  }
+}
+
+@media (min-width: 768px) and  (orientation : landscape){
+  .about .flex {
+    padding: 5em 20em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    div:nth-child(1) {
+        min-width: 37em;
+        max-width: 37em;
+        margin-right: 1em;
+    }
+    .description {
+      border-right: 3px solid #ffffff;
+    }
+  }
+}
+
+@media (min-width: 992px) and  (orientation : landscape){
+  .about p.description {
+    font-size: 1.5em;
+  }
+}

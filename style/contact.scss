@@ -1,0 +1,79 @@
+section.contact {
+  padding: 3em 0;
+
+  .email,
+  .phone,
+  .linkedin {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    margin-left: 2em;
+    white-space: nowrap;
+  }
+
+  p.description {
+    padding: 0 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+
+    > div {
+      margin: 1em 0;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  section.contact {
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (min-width: 768px) and (orientation: landscape) {
+  section.contact .flex {
+    padding: 5em 20em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    div.description {
+      min-width: 25em;
+      max-width: 25em;
+      margin-left: 1em;
+      border-left: 3px solid #000000;
+    }
+
+    .contacts {
+      display: block;
+      margin-left: 3em;
+    }
+
+    p.description {
+      text-align: justify;
+    }
+  }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+  section.contact {
+    p {
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+section.skills-presentation {
+  background-color: #eee;
+}
+
+section.skills-presentation .skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  text-align: center;
+  row-gap: 2em;
+}
+
+section.skills-presentation .skills p {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .skills {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+  .skills {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

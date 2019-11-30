@@ -1,0 +1,70 @@
+section.qualification {
+  position: relative;
+  background-color: #dddddd;
+  padding: 3em 1em;
+}
+
+section.qualification .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.qualification .flex .card {
+  margin: 2em;
+}
+
+section.qualification .flex .card .container {
+  max-width: 25em;
+  padding: 1em 2em;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+section.qualification .flex .card .container .title {
+  margin-bottom: 2em;
+  word-break: break-word;
+}
+
+section.qualification .flex .card .container p:first-child {
+  text-align: left;
+}
+
+section.qualification .flex .card .container p {
+  text-align: justify;
+}
+
+section.qualification .flex .card .triangle {
+  margin-left: 0.875em;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 15px 26px 15px;
+  border-color: transparent transparent #ffffff transparent;
+  -webkit-box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
+}
+
+section.qualification .flex .card > div {
+  text-align: center;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  section.experience .flex {
+    margin: 0 10em;
+  }
+}
+/*# sourceMappingURL=qualification.css.map */

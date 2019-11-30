@@ -1,0 +1,99 @@
+section.contact {
+  padding: 3em 0;
+}
+
+section.contact .email,
+section.contact .phone,
+section.contact .linkedin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 2em;
+  white-space: nowrap;
+}
+
+section.contact p.description {
+  padding: 0 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section.contact h1 {
+  margin-bottom: 30px;
+}
+
+section.contact .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2em;
+}
+
+section.contact .contacts > div {
+  margin: 1em 0;
+}
+
+@media (min-width: 576px) {
+  section.contact .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  section.contact .flex {
+    padding: 5em 20em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.contact .flex div.description {
+    min-width: 25em;
+    max-width: 25em;
+    margin-left: 1em;
+    border-left: 3px solid #000000;
+  }
+  section.contact .flex .contacts {
+    display: block;
+    margin-left: 3em;
+  }
+  section.contact .flex p.description {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+  section.contact p {
+    font-size: 1.5em;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

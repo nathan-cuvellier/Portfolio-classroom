@@ -1,0 +1,67 @@
+.bg-modal {
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.modal .title {
+  text-align: center;
+}
+
+.modal .description {
+  width: 19em;
+  padding: 1em;
+  text-align: justify;
+  line-height: 24px;
+}
+
+.modal > div {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.modal .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 19em;
+  border-radius: 5px;
+}
+
+.modal a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .modal {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+  .modal > div {
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  }
+  .modal .img img {
+    max-height: 11em;
+    min-height: 11em;
+  }
+}
+/*# sourceMappingURL=modal.css.map */
