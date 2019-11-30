@@ -21,11 +21,36 @@ window.addEventListener("DOMContentLoaded", function (event) {
       menuBurger.classList.remove('nav-active');
     });
   });
+  projects.forEach(function (project) {
+    project.addEventListener('click', function () {
+      var modal = document.createElement('div');
+      var background = document.createElement('div');
+      background.style.backgroundColor = '#000000';
+      background.style.opacity = '.8';
+      background.classList.add('bg-modal');
+      modal.classList.add('modal');
+      modal.appendChild(project.cloneNode(true));
+      setTimeout(function () {
+        if (document.querySelector('.modal') == null) {
+          document.body.appendChild(background);
+          document.body.appendChild(modal);
+        }
+      }, 1);
+    });
+  });
   document.body.addEventListener('click', function (event) {
     if (!nav.contains(event.target) && nav.classList.contains('nav-active') && !menuBurger.contains(event.target)) {
       nav.classList.remove('nav-active');
       menuBurger.classList.remove('nav-active');
     }
+
+    var modal = document.querySelector('.modal');
+
+    if (modal != null && !modal.contains(event.target)) {
+      document.body.removeChild(modal);
+      document.body.removeChild(document.querySelector('.bg-modal'));
+    } //if(this.contains(event.target))
+
   });
   menuBurger.addEventListener('click', function () {
     nav.classList.toggle('nav-active');
@@ -41,23 +66,6 @@ window.addEventListener("DOMContentLoaded", function (event) {
   setInterval(function () {
     new Timer();
   }, 1000);
-  projects.forEach(function (project) {
-    project.addEventListener('click', function (event) {
-      var modal = document.createElement('div');
-      var background = document.createElement('div');
-      background.style.backgroundColor = '#000000';
-      background.style.opacity = '.8';
-      background.classList.add('bg-modal');
-      modal.classList.add('modal');
-      modal.appendChild(event);
-      console.log(document.body.contains(modal));
-
-      if (document.querySelector('.modal') == null) {
-        document.body.appendChild(background);
-        document.body.appendChild(modal);
-      }
-    });
-  });
   new Animation();
 });
 

@@ -44,7 +44,6 @@
 
             let modal = document.querySelector('.modal')
             if(modal != null  && !modal.contains(event.target)) {
-                console.log('test')
                 document.body.removeChild(modal)
                 document.body.removeChild(document.querySelector('.bg-modal'))
             }
