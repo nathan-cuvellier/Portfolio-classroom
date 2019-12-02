@@ -35,6 +35,10 @@
   border-radius: 5px;
 }
 
+.project-presentation .project > div:hover {
+  cursor: pointer;
+}
+
 .project-presentation .project .img img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -51,7 +55,6 @@
     transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
   .project-presentation .project > div:hover {
-    cursor: pointer;
     -webkit-transform: scale(1.3);
             transform: scale(1.3);
   }

@@ -165,7 +165,9 @@ var Animation = function Animation() {
     entries.forEach(function (entrie) {
       if (entrie.intersectionRatio > 0.7) {
         entrie.target.classList.remove('not-visible');
-        if (Array.from(entrie.target.classList).includes('animation-skills')) new Skills(entrie.target.querySelector('canvas'));else if (Array.from(entrie.target.classList).includes('animation-fadeInLeft')) entrie.target.classList.add('fadeInLeft');else if (Array.from(entrie.target.classList).includes('animation-fadeInRight')) entrie.target.classList.add('fadeInRight');
+        if (Array.from(entrie.target.classList).includes('animation-skills')) new Skills(entrie.target.querySelector('canvas'));else if (Array.from(entrie.target.classList).includes('animation-fadeInLeft')) entrie.target.classList.add('fadeInLeft');else if (Array.from(entrie.target.classList).includes('animation-fadeInRight')) entrie.target.classList.add('fadeInRight');else if (Array.from(entrie.target.classList).includes('animation-fadeInUp')) {
+          entrie.target.classList.add('fadeInUp');
+        }
         observer.unobserve(entrie.target);
       }
     });

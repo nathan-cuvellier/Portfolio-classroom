@@ -1,0 +1,40 @@
+section.reference {
+  background-color: #eee;
+}
+
+section.reference div.references {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section.reference div.references > div {
+  margin: 2em 0;
+}
+
+section.reference div.references > div h3 {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 576px) {
+  section.reference div.references {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.reference div.references > div {
+    margin: 2em 4em;
+  }
+}
+/*# sourceMappingURL=reference.css.map */

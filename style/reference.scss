@@ -1,0 +1,29 @@
+section.reference {
+    background-color: $light-gray;
+  div.references {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    > div {
+      margin: 2em 0;
+
+      h3 {
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  section.reference {
+    div.references {
+      flex-direction: row;
+
+      > div {
+        margin: 2em 4em;
+      }
+    }
+  }
+}

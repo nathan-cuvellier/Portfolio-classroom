@@ -43,6 +43,11 @@
       color: inherit;
       width: 100%;
       padding: 1em 0;
+      color: #FFFFFF;
+      background-color: $blue;
+      &.disable {
+        background-color: #FF0000;
+      }
   }
 }
 
@@ -62,14 +67,8 @@
     }
 
     a {
-      background-color: $blue;
-      color: #FFFFFF;
       border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      
-      &.disable {
-        background-color: #FF0000;
-      }
+      border-bottom-right-radius: 5px;      
     }
   }
 }

@@ -24,6 +24,9 @@
       margin: 2em 0;
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
       border-radius: 5px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .img {
       img {
@@ -42,7 +45,6 @@
         margin: 2em 1.5em;
         transition: transform 0.3s ease-in;
         &:hover {
-          cursor: pointer;
           transform: scale(1.3);
         }
       }
