@@ -1,3 +1,6 @@
+/**
+ * @author Nathan CUVELLIER <cuvellier.nathan@gmail.com>
+ */
 window.addEventListener("DOMContentLoaded", (event) => {
     console.log("%cHOP", "color: orange; font-size: xxx-large"); // for fun
 

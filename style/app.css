@@ -327,7 +327,7 @@ div.bg {
   top: 0;
   -webkit-filter: brightness(0.4);
           filter: brightness(0.4);
-  background: url(../img/moutain1.jpg) no-repeat center center fixed;
+  background: url(../img/mountain1.jpg) no-repeat center center fixed;
   background-size: cover;
   z-index: -1;
   -webkit-transition: background-image 2s ease;
