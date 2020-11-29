@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let bgHeader = document.querySelector('div.bg')
 
     setInterval(() => {
-        bgHeader.style.backgroundImage = `url('img/moutain${i}.jpg')`;
+        bgHeader.style.backgroundImage = `url('img/mountain${i}.jpg')`;
         i++
         if (i > 3)
             i = 1
