@@ -414,12 +414,13 @@ section.qualification .flex .card > div {
 .project-presentation .project .description {
   width: 19em;
   padding: 1em;
+  margin: 0 auto;
   text-align: justify;
   line-height: 24px;
 }
 .project-presentation .project > div {
   margin: 2em 0;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
   border-radius: 5px;
 }
 .project-presentation .project > div:hover {
@@ -428,6 +429,7 @@ section.qualification .flex .card > div {
 .project-presentation .project img {
   object-fit: cover;
   width: 19em;
+  max-height: 11em;
   border-radius: 5px;
 }
 
@@ -630,6 +632,7 @@ section.reference div.references > div h3 {
 .modal img {
   object-fit: cover;
   width: 19em;
+  max-height: 300px;
   border-radius: 5px;
 }
 .modal a {
@@ -653,8 +656,7 @@ section.reference div.references > div h3 {
     transition: transform 0.3s ease-in;
   }
   .modal img {
-    max-height: 11em;
-    min-height: 11em;
+    height: 11em;
   }
   .modal a {
     border-bottom-left-radius: 5px;

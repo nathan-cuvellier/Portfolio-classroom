@@ -33,6 +33,7 @@
     img {
         object-fit: cover;
         width: 19em;
+        max-height: 300px;
         border-radius: 5px;
     }
 
@@ -60,10 +61,8 @@
         }
 
         img {
-            max-height: 11em;
-            min-height: 11em;
+            height: 11em;
         }
-
 
         a {
             border-bottom-left-radius: 5px;
