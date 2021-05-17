@@ -8,67 +8,66 @@
 }
 
 .modal {
-  z-index: $z-index-modal;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    z-index: $z-index-modal;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  .title {
-    text-align: center;
-  }
-
-  .description {
-    width: 19em;
-    padding: 1em;
-    text-align: justify;
-    line-height: 24px;
-  }
-  > div {
-    background-color: #ffffff;
-    border-radius: 5px;
-  }
-  .img {
-    img {
-      object-fit: cover;
-      width: 19em;
-      border-radius: 5px;
+    .title {
+        text-align: center;
     }
-  }
 
-  a {
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      width: 100%;
-      padding: 1em 0;
-      color: #FFFFFF;
-      background-color: $blue;
-      &.disable {
-        background-color: #FF0000;
-      }
-  }
-}
+    .description {
+        width: 19em;
+        padding: 1em;
+        text-align: justify;
+        line-height: 24px;
+    }
 
-@media (min-width: 768px) and (orientation: landscape) {
-  .modal {
-    transform: translate(-50%,-50%) scale(1.2);
-    
     > div {
-      transition: transform 0.3s ease-in;
+        background-color: #ffffff;
+        border-radius: 5px;
     }
 
-    .img {
-      img {
-        max-height: 11em;
-        min-height: 11em;
-      }
+    img {
+        object-fit: cover;
+        width: 19em;
+        border-radius: 5px;
     }
 
     a {
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;      
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        padding: 1em 0;
+        color: #FFFFFF;
+        background-color: $blue;
+
+        &.disable {
+            background-color: #FF0000;
+        }
     }
-  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+    .modal {
+        transform: translate(-50%, -50%) scale(1.2);
+
+        > div {
+            transition: transform 0.3s ease-in;
+        }
+
+        img {
+            max-height: 11em;
+            min-height: 11em;
+        }
+
+
+        a {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
 }

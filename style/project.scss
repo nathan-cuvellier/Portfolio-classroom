@@ -28,13 +28,13 @@
         cursor: pointer;
       }
     }
-    .img {
-      img {
-        object-fit: cover;
-        width: 19em;
-        border-radius: 5px;
-      }
+
+    img {
+      object-fit: cover;
+      width: 19em;
+      border-radius: 5px;
     }
+
   }
 }
 
@@ -49,12 +49,11 @@
         }
       }
 
-      .img {
-        img {
-          max-height: 11em;
-          min-height: 11em;
-        }
+      img {
+        max-height: 11em;
+        min-height: 11em;
       }
+
     }
   }
 }
